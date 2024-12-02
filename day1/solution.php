@@ -3,11 +3,6 @@
 /**
  * Advent of Code 2024 - Day 1: Historian Hysteria
  * Computes total distance and similarity score between two lists of location IDs.
- * 
- * Created on December 1st, 2024
- *
- * @author   ExileStudios
- * @link     https://github.com/ExileStudios
  */
 class HistorianHysteria
 {
