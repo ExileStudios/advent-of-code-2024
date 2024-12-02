@@ -1,0 +1,8 @@
+parameters:
+    level: 5
+    paths:
+        - .
+    excludePaths:
+        - vendor/*
+    inferPrivatePropertyTypeFromConstructor: true
+    phpVersion: 80400

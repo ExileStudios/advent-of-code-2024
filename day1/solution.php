@@ -6,7 +6,13 @@
  */
 class HistorianHysteria
 {
+    /**
+     * @var array<int>
+     */
     private array $leftList;
+    /**
+     * @var array<int>
+     */
     private array $rightList;
 
     /**
@@ -33,15 +39,25 @@ class HistorianHysteria
             throw new RuntimeException("File not found: $filename");
         }
 
+        $fileLines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        if ($fileLines === false) {
+            throw new RuntimeException("File not readable: $filename");
+        }
+
         $leftList = $rightList = [];
-        foreach (file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
-            [$left, $right] = preg_split('/\s+/', trim($line));
+        foreach ($fileLines as $line) {
+            $parts = preg_split('/\s+/', trim($line));
+            if ($parts === false || count($parts) !== 2) {
+                throw new RuntimeException("Invalid line format: $line");
+            }
+            [$left, $right] = $parts;
             $leftList[] = (int)$left;
             $rightList[] = (int)$right;
         }
 
         return [$leftList, $rightList];
     }
+
 
     /**
      * Calculates the total distance between the left and right lists.

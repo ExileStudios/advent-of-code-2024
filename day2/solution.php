@@ -7,6 +7,9 @@
  */
 class RedNosedReports
 {
+    /**
+     * @var array<array<int>>
+     */
     private array $reports;
 
     /**
@@ -17,13 +20,36 @@ class RedNosedReports
      */
     public function __construct(string $filename)
     {
+        $this->reports = $this->parseReports($filename);
+    }
+
+    /**
+     * Parses the input file and returns a list of reports.
+     *
+     * @param string $filename Path to the input file.
+     * @return array<array<int>> A list of reports.
+     * @throws RuntimeException If the file cannot be found or read.
+     */
+    private function parseReports(string $filename): array
+    {
         if (!file_exists($filename) || !is_readable($filename)) {
             throw new RuntimeException("File not accessible: $filename");
         }
 
-        $this->reports = array_map(
-            fn($line) => array_map('intval', preg_split('/\s+/', trim($line))),
-            file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES)
+        $fileLines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        if ($fileLines === false) {
+            throw new RuntimeException("File not readable: $filename");
+        }
+
+        return array_map(
+            function ($line) {
+                $parts = preg_split('/\s+/', trim($line));
+                if ($parts === false) {
+                    throw new RuntimeException("Invalid line format: $line");
+                }
+                return array_map('intval', $parts);
+            },
+            $fileLines
         );
     }
 
