@@ -10,4 +10,5 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 ## Progress
 - [x] Day 1: Historian Hysteria
 - [x] Day 2: Red-Nosed Reports
-- [ ] Day 3: TBD
+- [x] Day 3: Mull It Over
+- [ ] Day 4: TBD
