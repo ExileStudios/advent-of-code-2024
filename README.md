@@ -13,4 +13,5 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 3: Mull It Over
 - [x] Day 4: Ceres Search
 - [x] Day 5: Print Queue
-- [ ] Day 6: TBD
+- [x] Day 6: Guard Gallivant
+- [ ] Day 7: TBD
