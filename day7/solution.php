@@ -95,17 +95,20 @@ class BridgeRepair
             }
 
             foreach (range(0, $operationCount - 1) as $operation) {
+                if ($operation === self::OPERATIONS['||'] && !$includeConcatenation) {
+                    continue;
+                }
+            
                 $nextValue = match ($operation) {
                     self::OPERATIONS['+'] => $state['value'] + $numbers[$state['index'] + 1],
                     self::OPERATIONS['*'] => $state['value'] * $numbers[$state['index'] + 1],
-                    self::OPERATIONS['||'] => $includeConcatenation ? (int)($state['value'] . $numbers[$state['index'] + 1]) : null,
-                    default => null,
+                    self::OPERATIONS['||'] => (int)($state['value'] . $numbers[$state['index'] + 1]),
                 };
-
-                if ($nextValue === null || ($nextValue > $target && $operation !== self::OPERATIONS['+'])) {
+            
+                if ($nextValue > $target && $operation !== self::OPERATIONS['+']) {
                     continue;
                 }
-
+            
                 $stack[] = [
                     'index' => $state['index'] + 1,
                     'value' => $nextValue,
