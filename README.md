@@ -14,4 +14,5 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 4: Ceres Search
 - [x] Day 5: Print Queue
 - [x] Day 6: Guard Gallivant
-- [ ] Day 7: TBD
+- [x] Day 7: Bridge Repair
+- [ ] Day 8: TBD
