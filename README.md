@@ -17,4 +17,5 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 7: Bridge Repair
 - [x] Day 8: Resonant Collinearity
 - [x] Day 9: Disk Fragmenter
-- [ ] Day 10: TBD
+- [x] Day 10: Hoof It
+- [ ] Day 11: TBD
