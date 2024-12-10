@@ -16,4 +16,5 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 6: Guard Gallivant
 - [x] Day 7: Bridge Repair
 - [x] Day 8: Resonant Collinearity
-- [ ] Day 9: TBD
+- [x] Day 9: Disk Fragmenter
+- [ ] Day 10: TBD
