@@ -18,4 +18,5 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 8: Resonant Collinearity
 - [x] Day 9: Disk Fragmenter
 - [x] Day 10: Hoof It
-- [ ] Day 11: TBD
+- [x] Day 11: Plutonian Pebbles
+- [ ] Day 12: TBD
