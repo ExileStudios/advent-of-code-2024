@@ -22,3 +22,22 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 12: Garden Groups
 - [x] Day 13: Claw Contraption
 - [ ] Day 14: TBD
+
+## About Advent of Code
+
+Advent of Code is an annual event featuring an advent calendar of programming puzzles created by [Eric Wastl](https://twitter.com/ericwastl). These puzzles are suitable for a wide range of skill levels and can be solved in any programming language.
+
+You can participate, explore past events, or learn more at the official [Advent of Code website](https://adventofcode.com/).
+
+**Note:** This repository contains only my solutions to the puzzles. To solve the puzzles yourself:
+1. Visit the [Advent of Code website](https://adventofcode.com/).
+2. Log in to access your personalized puzzle inputs.
+3. Use this repository for inspiration or as a reference after attempting the puzzles on your own.
+
+## Disclaimer
+
+The problem inputs and descriptions belong to the Advent of Code. For legal and ethical reasons:
+- This repository does not include puzzle inputs. To run the solutions, you'll need to download your own inputs from the Advent of Code website.
+- Do not copy puzzle text or inputs into this repository or elsewhere.
+
+Enjoy solving, happy coding, and happy holidays! - [ExileStudios](https://github.com/ExileStudios)🎄🌟
