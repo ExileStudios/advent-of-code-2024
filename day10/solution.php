@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 10: Hoof It
@@ -213,12 +214,12 @@ final class LavaHikingTrails
     }
 }
 
-// Main execution flow
+// Main execution
 $inputFile = $argv[1] ?? (__DIR__ . '/input.txt');
 try {
     $hikingTrails = new LavaHikingTrails($inputFile);
-    echo "Total Trailhead Scores: " . $hikingTrails->calculateTrailheadScores() . "\n";
-    echo "Total Trailhead Ratings: " . $hikingTrails->calculateTrailheadRatings() . "\n";
+    echo "Total Trailhead Scores: " . $hikingTrails->calculateTrailheadScores() . PHP_EOL;
+    echo "Total Trailhead Ratings: " . $hikingTrails->calculateTrailheadRatings() . PHP_EOL;
 } catch (RuntimeException $e) {
     echo "Error: " . $e->getMessage() . PHP_EOL;
 }

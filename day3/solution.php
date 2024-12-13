@@ -1,11 +1,14 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 3: Mull It Over
+ * 
  * This class computes sums of valid multiplication instructions
  * and conditionally enabled instructions based on parsed corrupted memory.
+ * 
  */
-class MullItOver
+final class MullItOver
 {
     /**
      * @var array<string> Corrupted memory lines from the input file.
@@ -112,13 +115,13 @@ class MullItOver
     }
 }
 
-// Main execution flow
+// Main execution
 $inputFile = $argv[1] ?? (__DIR__ . '/input.txt');
 
 try {
     $mullItOver = new MullItOver($inputFile);
-    echo "Valid multiplications: " . $mullItOver->computeAllMultiplicationsSum() . "\n";
-    echo "Enabled multiplications: " . $mullItOver->computeEnabledMultiplicationsSum() . "\n";
+    echo "Valid multiplications: " . $mullItOver->computeAllMultiplicationsSum() . PHP_EOL;
+    echo "Enabled multiplications: " . $mullItOver->computeEnabledMultiplicationsSum() . PHP_EOL;
 } catch (RuntimeException $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    echo "Error: " . $e->getMessage() . PHP_EOL;
 }

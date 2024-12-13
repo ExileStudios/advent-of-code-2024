@@ -1,10 +1,13 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 4: Ceres Search
+ * 
  * Counts occurrences of the word "XMAS" and "X-MAS" patterns in a 2D word search grid.
+ * 
  */
-class CeresSearch
+final class CeresSearch
 {
     /**
      * The 2D word search grid.
@@ -237,13 +240,13 @@ class CeresSearch
     }
 }
 
-// Main execution flow
+// Main execution
 $inputFile = $argv[1] ?? (__DIR__ . '/input.txt');
 
 try {
     $ceresSearch = new CeresSearch($inputFile);
-    echo "Occurrences of 'XMAS': " . $ceresSearch->countXMASWords() . "\n";
-    echo "Occurrences of 'X-MAS': " . $ceresSearch->countXMASPatterns() . "\n";
+    echo "Occurrences of 'XMAS': " . $ceresSearch->countXMASWords() . PHP_EOL;
+    echo "Occurrences of 'X-MAS': " . $ceresSearch->countXMASPatterns() . PHP_EOL;
 } catch (RuntimeException $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    echo "Error: " . $e->getMessage() . PHP_EOL;
 }

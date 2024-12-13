@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 12: Garden Groups

@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 7: Bridge Repair
@@ -7,7 +8,7 @@
  * `+`, `*`, and optionally `||` operators to sequences of numbers.
  * 
  */
-class BridgeRepair
+final class BridgeRepair
 {
     /**
      * Mapping of operation types to their indices.

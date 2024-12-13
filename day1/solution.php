@@ -1,10 +1,13 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 1: Historian Hysteria
+ * 
  * Computes total distance and similarity score between two lists of location IDs.
+ * 
  */
-class HistorianHysteria
+final class HistorianHysteria
 {
     /**
      * @var array<int>
@@ -97,12 +100,13 @@ class HistorianHysteria
     }
 }
 
+// Main execution
 $inputFile = $argv[1] ?? (__DIR__ . '/input.txt');
 
 try {
     $hysteria = new HistorianHysteria($inputFile);
-    echo "Total Distance: " . $hysteria->computeTotalDistance() . "\n";
-    echo "Similarity Score: " . $hysteria->computeSimilarityScore() . "\n";
+    echo "Total Distance: " . $hysteria->computeTotalDistance() . PHP_EOL;
+    echo "Similarity Score: " . $hysteria->computeSimilarityScore() . PHP_EOL;
 } catch (RuntimeException $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    echo "Error: " . $e->getMessage() . PHP_EOL;
 }

@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 5: Print Queue
@@ -8,8 +9,9 @@
  *
  * Takes all incorrectly ordered updates and uses the rules to reorder them.
  * After reordering, sums the middle pages of these fixed invalid updates.
+ * 
  */
-class PrintQueue
+final class PrintQueue
 {
     /**
      * @var array<array{0:int,1:int}> The ordering rules, each a pair [X, Y],
@@ -208,13 +210,13 @@ class PrintQueue
     }
 }
 
-// Main execution flow
+// Main execution
 $inputFile = $argv[1] ?? (__DIR__ . '/input.txt');
 
 try {
     $printQueue = new PrintQueue($inputFile);
-    echo "Sum of middle pages (valid updates): " . $printQueue->computeMiddleSumOfValid() . "\n";
-    echo "Sum of middle pages (fixed invalid updates): " . $printQueue->computeMiddleSumOfFixedInvalid() . "\n";
+    echo "Sum of middle pages (valid updates): " . $printQueue->computeMiddleSumOfValid() . PHP_EOL;
+    echo "Sum of middle pages (fixed invalid updates): " . $printQueue->computeMiddleSumOfFixedInvalid() . PHP_EOL;
 } catch (RuntimeException $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    echo "Error: " . $e->getMessage() . PHP_EOL;
 }

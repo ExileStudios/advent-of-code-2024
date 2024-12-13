@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 8: Resonant Collinearity
@@ -218,8 +219,8 @@ final class ResonantCollinearity
 $inputFile = $argv[1] ?? (__DIR__ . '/input.txt');
 try {
     $resonance = new ResonantCollinearity($inputFile);
-    echo "Collinear Antinodes: " . $resonance->computeCollinearAntinodes() . "\n";
-    echo "Linear Antinodes: " . $resonance->computeLinearAntinodes() . "\n";
+    echo "Collinear Antinodes: " . $resonance->computeCollinearAntinodes() . PHP_EOL;
+    echo "Linear Antinodes: " . $resonance->computeLinearAntinodes() . PHP_EOL;
 } catch (RuntimeException $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    echo "Error: " . $e->getMessage() . PHP_EOL;
 }

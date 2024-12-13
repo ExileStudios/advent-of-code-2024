@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 9: Disk Fragmenter
@@ -226,12 +227,12 @@ final class DiskFragmenter
     }
 }
 
-// Main execution flow
+// Main execution
 $inputFile = $argv[1] ?? (__DIR__ . '/input.txt');
 try {
     $fragmenter = new DiskFragmenter($inputFile);
-    echo "Compact Individual Blocks: " . $fragmenter->compactIndividualBlocks() . "\n";
-    echo "Compact Whole Files: " . $fragmenter->compactWholeFiles() . "\n";
+    echo "Compact Individual Blocks: " . $fragmenter->compactIndividualBlocks() . PHP_EOL;
+    echo "Compact Whole Files: " . $fragmenter->compactWholeFiles() . PHP_EOL;
 } catch (RuntimeException $e) {
     echo "Error: " . $e->getMessage() . PHP_EOL;
 }

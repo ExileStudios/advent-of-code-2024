@@ -1,11 +1,14 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 2: Red-Nosed Reports
+ * 
  * Computes the number of safe reports based on specific safety criteria, including
  * the ability to tolerate a single bad level with the Problem Dampener.
+ * 
  */
-class RedNosedReports
+final class RedNosedReports
 {
     /**
      * @var array<array<int>>
@@ -127,12 +130,13 @@ class RedNosedReports
     }
 }
 
+// Main execution
 $inputFile = $argv[1] ?? (__DIR__ . '/input.txt');
 
 try {
     $redNosedReports = new RedNosedReports($inputFile);
-    echo "Safe reports: " . $redNosedReports->computeSafeReports() . "\n";
-    echo "Safe reports with Problem Dampener: " . $redNosedReports->computeSafeReportsWithDampener() . "\n";
+    echo "Safe reports: " . $redNosedReports->computeSafeReports() . PHP_EOL;
+    echo "Safe reports with Problem Dampener: " . $redNosedReports->computeSafeReportsWithDampener() . PHP_EOL;
 } catch (RuntimeException $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    echo "Error: " . $e->getMessage() . PHP_EOL;
 }

@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 /**
  * Advent of Code 2024 - Day 6: Guard Gallivant
@@ -7,7 +8,7 @@
  * that force the guard into a loop.
  * 
  */
-class GuardGallivant
+final class GuardGallivant
 {
     /**
      * @var array<array<string>> The grid representing the lab layout.
@@ -354,12 +355,13 @@ class GuardGallivant
     }
 }
 
+// Main execution
 $inputFile = $argv[1] ?? (__DIR__ . '/input.txt');
 
 try {
     $guardGallivant = new GuardGallivant($inputFile);
-    echo "Patrol Path: " . $guardGallivant->computePatrolPath() . "\n";
-    echo "Trap Locations: " . $guardGallivant->computeTrapLocations() . "\n";
+    echo "Patrol Path: " . $guardGallivant->computePatrolPath() . PHP_EOL;
+    echo "Trap Locations: " . $guardGallivant->computeTrapLocations() . PHP_EOL;
 } catch (RuntimeException $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    echo "Error: " . $e->getMessage() . PHP_EOL;
 }
