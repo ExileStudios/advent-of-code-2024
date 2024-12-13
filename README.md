@@ -19,4 +19,5 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 9: Disk Fragmenter
 - [x] Day 10: Hoof It
 - [x] Day 11: Plutonian Pebbles
-- [ ] Day 12: TBD
+- [x] Day 12: Garden Groups
+- [ ] Day 13: TBD
