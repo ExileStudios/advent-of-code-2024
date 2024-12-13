@@ -20,4 +20,5 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 10: Hoof It
 - [x] Day 11: Plutonian Pebbles
 - [x] Day 12: Garden Groups
-- [ ] Day 13: TBD
+- [x] Day 13: Claw Contraption
+- [ ] Day 14: TBD
