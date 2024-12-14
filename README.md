@@ -21,7 +21,8 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 11: Plutonian Pebbles
 - [x] Day 12: Garden Groups
 - [x] Day 13: Claw Contraption
-- [ ] Day 14: TBD
+- [x] Day 14: Restroom Redoubt
+- [ ] Day 15: TBD
 
 ## About Advent of Code
 
