@@ -22,7 +22,9 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 12: Garden Groups
 - [x] Day 13: Claw Contraption
 - [x] Day 14: Restroom Redoubt
-- [ ] Day 15: TBD
+- [x] Day 15: Warehouse Woes
+- [x] Day 16: Reindeer Maze
+- [ ] Day 17: TBD
 
 ## About Advent of Code
 
