@@ -26,7 +26,8 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 16: Reindeer Maze
 - [x] Day 17: Chronospatial Computer
 - [x] Day 18: RAM Run
-- [ ] Day 19: TBD
+- [x] Day 19: Linen Layout
+- [ ] Day 20: TBD
 
 ## About Advent of Code
 
