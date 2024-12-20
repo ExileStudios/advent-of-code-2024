@@ -27,7 +27,8 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 17: Chronospatial Computer
 - [x] Day 18: RAM Run
 - [x] Day 19: Linen Layout
-- [ ] Day 20: TBD
+- [x] Day 20: Race Condition
+- [ ] Day 21: TBD
 
 ## About Advent of Code
 
