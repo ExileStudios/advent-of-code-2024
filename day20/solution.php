@@ -102,7 +102,7 @@ final class RaceCondition
     {
         foreach ($this->grid as $r => $row) {
             if (($c = array_search($tile, $row, true)) !== false) {
-                return [$r, $c];
+                return [(int)$r, (int)$c];
             }
         }
         throw new RuntimeException("Tile '$tile' not found");
@@ -133,7 +133,7 @@ final class RaceCondition
                 if ($this->isValidPos($nr, $nc) &&
                     $this->isTrack($nr, $nc) &&
                     $distances[$nr][$nc] === PHP_INT_MAX) {
-                    $distances[$nr][$nc] = $dist + 1;
+                    $distances[$nr][$nc] = (int)($dist + 1);
                     $queue->enqueue([$nr, $nc]);
                 }
             }
