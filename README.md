@@ -28,7 +28,8 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 18: RAM Run
 - [x] Day 19: Linen Layout
 - [x] Day 20: Race Condition
-- [ ] Day 21: TBD
+- [x] Day 21: Keypad Conundrum
+- [ ] Day 22: TBD
 
 ## About Advent of Code
 
