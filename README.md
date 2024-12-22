@@ -29,7 +29,8 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 19: Linen Layout
 - [x] Day 20: Race Condition
 - [x] Day 21: Keypad Conundrum
-- [ ] Day 22: TBD
+- [x] Day 22: Monkey Market
+- [ ] Day 23: TBD
 
 ## About Advent of Code
 
