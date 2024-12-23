@@ -30,7 +30,8 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 20: Race Condition
 - [x] Day 21: Keypad Conundrum
 - [x] Day 22: Monkey Market
-- [ ] Day 23: TBD
+- [x] Day 23: LAN Party
+- [ ] Day 24: TBD
 
 ## About Advent of Code
 
