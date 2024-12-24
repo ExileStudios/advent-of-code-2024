@@ -31,7 +31,8 @@ This repository contains solutions for Advent of Code 2024. Each day's puzzles w
 - [x] Day 21: Keypad Conundrum
 - [x] Day 22: Monkey Market
 - [x] Day 23: LAN Party
-- [ ] Day 24: TBD
+- [x] Day 24: Crossed Wires
+- [ ] Day 25: TBD🎄🎁
 
 ## About Advent of Code
 
