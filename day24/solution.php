@@ -118,7 +118,7 @@ final class CrossedWires
             }
         }
 
-        return bindec($binary);
+        return (int)bindec($binary);
     }
 
     /**
@@ -129,8 +129,14 @@ final class CrossedWires
     public function findSwappedWires(): string
     {
         $wrong = [];
-        $highestZ = max(array_filter(array_keys($this->gates), fn($key) => str_starts_with($key, 'z')));
+        $keys = array_filter(array_keys($this->gates), fn($key) => str_starts_with($key, 'z'));
 
+        if (empty($keys)) {
+            throw new RuntimeException("No gates with keys prefixed 'z' found.");
+        }
+
+        $highestZ = max($keys);
+        
         foreach ($this->gates as $output => [$input1, $operation, $input2]) {
             if (
                 (str_starts_with($output, 'z') && $operation !== 'XOR' && $output !== $highestZ) ||
